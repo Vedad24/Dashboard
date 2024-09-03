@@ -16,8 +16,6 @@
 .sidebar,
 .header,
 .content {
-    /* border: 2px solid black;
-    border-radius: 5px; */
     text-align: center;
 }
 
@@ -110,7 +108,7 @@
     margin-left: 3rem;
 }
 
-.header .left {
+.header .right {
     display: flex;
     gap: 2rem;
     justify-content: flex-end;
@@ -120,7 +118,6 @@
 .searchbar {
     position: relative;
 }
-
 
 .searchbar input[type="text"] {
     transition-duration: 300ms;
@@ -153,9 +150,13 @@
     height: 32px;
 }
 
-
 .searchbar input[type="text"]:focus {
     outline: none;
+}
+
+.right button:focus+input,
+.right input:focus {
+    width: 200px;
 }
 
 .header .profile {
@@ -228,11 +229,6 @@
     border-radius: 0px 0px 20px 20px;
 }
 
-/* .content-sidebar{
-    display: grid;
-    place-items: center;
-} */
-
 .sidebar-cards {
     padding: 10px 0;
     background-color: white;
@@ -285,7 +281,6 @@
     }
 }
 
-
 footer {
     background-color: #e0f2fe;
     padding: 5px;
@@ -299,6 +294,7 @@ footer {
 footer svg {
     width: 20px;
 }
+
 
 /*COLORS*/
 /*#feb8b8 #9cabfe #4c78fd*/
