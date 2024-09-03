@@ -13,5 +13,5 @@ searchButton.addEventListener("click", searchBar = () => {
         search_bar.style.transitionDuration = "500ms";
         clicked = false;
     }
-    
-} )
+
+})
