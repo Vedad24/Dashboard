@@ -110,13 +110,15 @@
 
 .header .right {
     display: flex;
-    gap: 2rem;
     justify-content: flex-end;
-    margin-right: 3rem;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 .searchbar {
     position: relative;
+    margin-bottom: 38px;
+    margin-right: 2rem;
 }
 
 .searchbar input[type="text"] {
@@ -217,6 +219,10 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset -2px -3px 0px rgba(0, 0, 0, 0.4);
 }
 
+.dr {
+    border-radius: 20px;
+}
+
 .blackBox {
     position: absolute;
     width: 100%;
@@ -293,7 +299,143 @@ footer {
 
 footer svg {
     width: 20px;
+    fill: black;
 }
+
+.dark-header, .dark-footer {
+    background-color: #3A3A42;
+    color: white;
+}
+
+.dark-sidebar {
+    background-color: #2C2C34;
+}
+
+.dark-content {
+    background-color: #1A1A24;
+}
+
+.dark-content h1{
+    color: white;
+}
+
+.dark-footer svg{
+    fill: white;
+}
+
+.dark-footer #Dribbble-Light-Preview{
+    fill: white;
+}
+
+
+
+.dark-header,
+.dark-content,
+.dark-sidebar,
+.header,
+.sidebar,
+.content,
+.dark-footer,
+h1,
+#Dribbble-Light-Preview,
+svg,
+footer,
+.dark-footer #Dribbble-Light-Preview,
+.dark-footer svg
+{
+    transition-duration: 800ms;
+}
+
+.projects .project-item:hover {
+    margin-bottom: 10px;
+    box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset -2px -3px 0px rgba(0, 0, 0, 0.4);
+    transition-duration: 100ms;
+}
+
+
+
+.dark-icon{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #075985;
+    transition-duration: 800ms;
+}
+
+.--dark-icon {
+    background-color: #3A3A42;
+    transition-duration: 800ms;
+}
+
+.ball{
+    position: relative;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    order: 1;
+    transition-duration: 200ms;
+}
+
+.dark-icon .--ball {
+    width: 35px;
+    height: 35px;
+    transition-duration: 200ms;
+}
+
+.moon{
+    display: none;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    transition-duration: 500ms;
+}
+
+.dark-icon .--moon {
+    background-color: #3A3A42;
+    display: block;
+    right: -8px;
+    top: -2px;
+    transition-duration: 500ms;
+}
+
+.line {
+    width: 3px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.--lines .line{
+    height: 2px;
+}
+
+.lines {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 18px);
+    grid-template-rows: repeat(3, 18px);
+
+    place-items: center;
+    order: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.dark-icon .--lines {
+    grid-template-columns: repeat(3, 10px);
+    grid-template-rows: repeat(3, 10px);
+}
+
+
+
+
+
 
 
 /*COLORS*/
